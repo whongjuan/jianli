@@ -1,0 +1,193 @@
+@charset "utf-8";
+/* CSS Document */
+/* 分组选择器： 公用同一套样式 符号是一个逗号隔开*/
+body,html,.swiper-container,.main{width: 100%;height:100%;overflow: hidden}
+html{font-size: 100px;}
+/*把所有运动元素隐藏起来 opacity：0*/
+/*箭头*/
+.arrow{ z-index:99; position:absolute; bottom:.2rem; left:50%; margin-left:-.425rem; width:.58rem; height:.38rem; background:url(../images/jiantou_03.png) no-repeat; background-size:cover;
+-webkit-animation: fadeInUp 1s .2s infinite ease both;
+        animation: fadeInUp 1s .2s infinite ease both;
+}
+/*音乐*/
+.music{z-index:100;position:absolute;top:.2rem;right:.2rem;width:.6rem;height:.6rem; background:url(../audio/music.svg) no-repeat;background-size:100% 100%}
+.music audio {
+    display: none;
+}
+/*音乐动画*/
+.music {
+    -webkit-animation: musicMove 1s linear 0s infinite both;
+    animation: musicMove 1s linear 0s infinite both;
+}
+@-webkit-keyframes musicMove {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+@keyframes musicMove {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+/* 第一屏*/
+.page1{ background:url(../images/page1/beijing.png) no-repeat; background-size:100% 100%;}
+
+.page1 .text01{width:3.35rem;height: 2.4166667rem; background:url(../images/page1/shoutwo.png) no-repeat;background-size: cover;margin-left:3.1rem;margin-top:0.9rem;}
+.page1 .text02{width:3.31666667rem;height: 2.4166667rem; background:url(../images/page1/shou.png) no-repeat;background-size: cover;margin-top:2.4rem;}
+.page1 .text03{height:4.9rem; width:4.2rem;background:url(../images/page1/jianlitu_03.png);background-size: cover;margin-left: 1.1rem;margin-top: -5.9rem;}
+/* 第一屏元素动画*/
+#page1 .text02{-webkit-animation:text02 2s ease .6s infinite  both ;animation:text02 2s ease .6s infinite  both ;}
+
+@-webkit-keyframes text02{
+    0%,100%{transform:rotate(0deg)}
+    50%{transform:rotate(15deg)}
+}
+@keyframes text02{
+0%,100%{transform:rotate(0deg)}
+50%{transform:rotate(15deg)}
+}
+#page1 .text01{-webkit-animation:text01 2s ease .6s infinite  both ;animation:text01 2s ease .6s infinite  both ;}
+
+@-webkit-keyframes text01{
+    0%,100%{transform:rotate(0deg)}
+    50%{transform:rotate(15deg)}
+}
+@keyframes text01{
+0%,100%{transform:rotate(0deg)}
+50%{transform:rotate(15deg)}
+}
+
+/* 第二屏*/
+.page2{ background:url(../images/page2/beijing.png) no-repeat;background-size: 100% 100%;}
+.page2 .kuang{background:url(../images/page2/kuang.png) no-repeat;width: 0.06rem;height: 6.4rem;background-size: cover;position:absolute;margin-top:1.8rem;margin-left: 1.3rem;}
+.page2 .text1{position:absolute;top:.6rem;left:.2rem;}
+.page2 span{float:left;}
+
+.page2 .text1{position:absolute;top:.6rem;left:.2rem;}
+.page2 .text1 span{width: 3.41666667rem;height: .83333333rem;margin-left:.66rem}
+.page2 .text1 span:nth-child(1){background:url(../images/page2/jichu_03.png) no-repeat;background-size: cover}
+.page2 .text2{position:absolute;top:.6rem;left:.2rem;}
+.page2 .text2 span{width: .05rem;height: 5.33333333rem;margin-left:1rem;}
+.page2 .text3{position: absolute;top:2.6rem;right:.8rem;}
+.page2 .text3 span{width:3.416666667rem;height: 1.26666667rem;margin-left: 2.2rem; }
+.page2 .text3 span:nth-child(1){ background:url(../images/page2/ziliao_01.png) no-repeat;background-size: cover}
+.page2 .text3 span:nth-child(2){ background:url(../images/page2/ziliao_02.png) no-repeat;background-size: cover}
+.page2 .text3 span:nth-child(3){background:url(../images/page2/ziliao_03.png) no-repeat;background-size: cover}
+.page2 .text3 span:nth-child(4){background:url(../images/page2/ziliao_04.png) no-repeat;background-size: cover}
+
+/* 第二屏元素动画*/
+#page2 span{opacity: 0;}
+#page2 .text1 span:nth-child(1){-webkit-animation: bounceInRight 1s ease 1s both;animation: bounceInRight 1s ease 1s both}
+#page2 .text2 span:nth-child(1){-webkit-animation: bounceInRight 1s ease 2s both;animation: bounceInRight 1s ease 2s both}
+#page2 .text3 span:nth-child(1){-webkit-animation: bounceInRight 1s ease 3s both;animation: bounceInDown 1s ease 3s both}
+#page2 .text3 span:nth-child(2){-webkit-animation: bounceInRight 1s ease 4s both;animation: bounceInDown 1s ease 4s both}
+#page2 .text3 span:nth-child(3){-webkit-animation: bounceInRight 1s ease 5s both;animation: bounceInDown 1s ease 5s both}
+#page2 .text3 span:nth-child(4){-webkit-animation: bounceInRight 1s ease 6s both;animation: bounceInDown 1s ease 6s both}
+
+/* 第三屏*/
+.page3{background:url(../images/page3/beijing.png) no-repeat;background-size: 100% 100%;}
+.page3 .bg{width:100%; height:100%;background:url(../images/page3/beijing.png) no-repeat;background-size: 100% 100%}
+
+.page3 .text{
+	
+	position: absolute;
+	width: 3.41666667rem;
+	height: .83333333rem;
+	margin-left:.66rem;
+	background: url(../images/page3/zhuanye_03.png) no-repeat;
+	background-size: cover;
+}
+.page3 .text span{width: 3.41666667rem;height: .83333333rem;margin-left:.66rem}
+.page3 .text span{background:url(../images/page2/zhuanye_03.png) no-repeat;background-size: cover}
+.page3 .text{position:absolute;top:.6rem;left:.2rem;}
+.page3 .people div{position: absolute;}
+.renwu01{top:2rem;left:1rem;width: 0.88333333rem;height: 0.86666667rem; background:url(../images/page3/ps_03.png) no-repeat;background-size: cover}
+.renwu03{top:3.17rem;left:1rem;width: 0.88333333rem;height: 0.86666667rem;background: url(../images/page3/ai_03.png) no-repeat;background-size: cover}
+.renwu05{top:4.34rem;left:1rem;width: 0.88333333rem;height: 0.86666667rem;background: url(../images/page3/pr_03.png) no-repeat;background-size: cover}
+.renwu07{top:5.51rem;left:1rem;width: 0.88333333rem;height: 0.86666667rem;background: url(../images/page3/dw_03.png) no-repeat;background-size: cover}
+.renwu09{top:6.68rem;left:1rem;width: 0.88333333rem;height: 0.86666667rem;background: url(../images/page3/word_03.png) no-repeat;background-size: cover}
+.renwu02{width: 2.53333333rem;height: 0.86666667rem;top:2rem;left:3.3rem; background: url(../images/page3/xingx_03.png) no-repeat;background-size: cover}
+.renwu04{width: 2.53333333rem;height: 0.86666667rem;top:3.17rem;left:3.3rem;background: url(../images/page3/xing_03.png) no-repeat;background-size: cover}
+.renwu06{width: 2.53333333rem;height: 0.86666667rem;top:4.34rem;left:3.3rem;background: url(../images/page3/xing_03.png) no-repeat;background-size: cover}
+.renwu08{width: 2.53333333rem;height: 0.86666667rem;top:5.51rem;left:3.3rem;background: url(../images/page3/xing_03.png) no-repeat;background-size: cover}
+.renwu010{width: 2.53333333rem;height: 0.86666667rem;top:6.68rem;left:3.3rem;background: url(../images/page3/xing_03.png) no-repeat;background-size: cover}
+
+/* 第三屏元素动画*/
+#page3 .text{-webkit-animation: bounceInDown 1s 1s ease both ;animation: bounceInDown 1s  1s ease both}
+#page3 .renwu01{-webkit-animation: bounceInDown 1s 2s ease both ;animation: bounceInDown 1s  2s ease both}
+#page3 .renwu03{-webkit-animation: bounceInDown 1s 4s ease both ;animation: bounceInDown 1s  4s ease both}
+#page3 .renwu05{-webkit-animation: bounceInDown 1s 6s ease both ;animation: bounceInDown 1s  6s ease both}
+#page3 .renwu07{-webkit-animation: bounceInDown 1s 8s ease both ;animation: bounceInDown 1s  8s ease both}
+#page3 .renwu09{-webkit-animation: bounceInDown 1s 10s ease both ;animation: bounceInDown 1s  10s ease both}
+#page3 .renwu02{-webkit-animation: bounceInDown 1s 3s ease both ;animation: bounceInDown 1s  3s ease both}
+#page3 .renwu04{-webkit-animation: bounceInDown 1s 5s ease both ;animation: bounceInDown 1s  5s ease both}
+#page3 .renwu06{-webkit-animation: bounceInDown 1s 7s ease both ;animation: bounceInDown 1s  7s ease both}
+#page3 .renwu08{-webkit-animation: bounceInDown 1s 9s ease both ;animation: bounceInDown 1s  9s ease both}
+#page3 .renwu010{-webkit-animation: bounceInDown 1s 11s ease both ;animation: bounceInDown 1s  11s ease both}
+
+/* 第四屏*/
+.page4{background:url(../images/page4/beijing.png) no-repeat;background-size: 100% 100%;}
+.page4 .bg{width:100%; height:100%;background:url(../images/page4/beijing.png) no-repeat;background-size: 100% 100%}
+
+.page4 .text{
+	
+	position: absolute;
+	width: 3.41666667rem;
+	height: .83333333rem;
+	margin-left:.66rem;
+	background: url(../images/page4/pingjia_03.png) no-repeat;
+	background-size: cover;
+}
+.page4 .text span{width: 3.41666667rem;height: .83333333rem;margin-left:.66rem}
+.page4 .text span{background:url(../images/page4/pingjia_03.png) no-repeat;background-size: cover}
+.page4 .text{position:absolute;top:.6rem;left:.2rem;}
+.page4 .gerenpingjia div{position: absolute;}
+.page4 .text01{top:2rem;left:1.1rem;width: 3.68333333rem;height: 0.5rem; background:url(../images/page4/ping_01_03.png) no-repeat;background-size: cover}
+.page4 .text03{top:2.6rem;left:1.1rem;width: 3.68333333rem;height: 0.5rem; background:url(../images/page4/ping_03_03.png) no-repeat;background-size: cover}
+.page4 .text05{top:3.2rem;left:1rem;width: 3.68333333rem;height: 0.5rem; background:url(../images/page4/ping_05_03.png) no-repeat;background-size: cover}
+.page4 .text07{top:3.8rem;left:1rem;width: 3.68333333rem;height: 0.5rem; background:url(../images/page4/ping_07_03.png) no-repeat;background-size: cover}
+.page4 .text09{top:4.4rem;left:1rem;width: 3.68333333rem;height: 0.5rem; background:url(../images/page4/ping_09_03.png) no-repeat;background-size: cover}
+.page4 .text02{top:5rem;left:1.1rem;width: 3.68333333rem;height: 0.5rem; background:url(../images/page4/ping_02_03.png) no-repeat;background-size: cover}
+.page4 .text04{top:5.6rem;left:1.1rem;width: 3.68333333rem;height: 0.5rem; background:url(../images/page4/ping_04_03.png) no-repeat;background-size: cover}
+.page4 .text06{top:6.2rem;left:1rem;width: 3.68333333rem;height: 0.5rem; background:url(../images/page4/ping_06_03.png) no-repeat;background-size: cover}
+.page4 .text08{top:6.8rem;left:1rem;width: 3.68333333rem;height: 0.5rem; background:url(../images/page4/ping_08_03.png) no-repeat;background-size: cover}
+.page4 .text010{top:7.4rem;left:1rem;width: 3.68333333rem;height: 0.5rem; background:url(../images/page4/ping_10_03.png) no-repeat;background-size: cover}
+
+
+/* 第四屏元素动画*/
+#page4 .text{-webkit-animation: bounceInDown 1s 1s ease both ;animation: bounceInDown 1s  1s ease both}
+#page4 .text01{-webkit-animation: bounceInDown 1s 2s ease both ;animation: bounceInDown 1s  2s ease both}
+#page4 .text02{-webkit-animation: bounceInDown 1s 3s ease both ;animation: bounceInDown 1s  3s ease both}
+#page4 .text03{-webkit-animation: bounceInDown 1s 4s ease both ;animation: bounceInDown 1s  4s ease both}
+#page4 .text04{-webkit-animation: bounceInDown 1s 5s ease both ;animation: bounceInDown 1s  5s ease both}
+#page4 .text05{-webkit-animation: bounceInDown 1s 6s ease both ;animation: bounceInDown 1s  6s ease both}
+#page4 .text06{-webkit-animation: bounceInDown 1s 7s ease both ;animation: bounceInDown 1s  7s ease both}
+#page4 .text07{-webkit-animation: bounceInDown 1s 8s ease both ;animation: bounceInDown 1s  8s ease both}
+#page4 .text08{-webkit-animation: bounceInDown 1s 9s ease both ;animation: bounceInDown 1s  9s ease both}
+#page4 .text09{-webkit-animation: bounceInDown 1s 10s ease both ;animation: bounceInDown 1s  10s ease both}
+#page4 .text10{-webkit-animation: bounceInDown 1s 11s ease both ;animation: bounceInDown 1s  11s ease both}
+
+/* 第五屏*/
+.page5{	background: url(../images/page5/beijing.png) no-repeat; background-size:100% 100%;}
+.page5 .bg{width:100%; height:100%;background:url(../images/page5/beijing.png) no-repeat;background-size: 100% 100%}
+.page5 .contact{ position:absolute; top:.5rem; width:4rem;left:50%;margin-left:-2rem; height:5.8rem; font-size:.2rem; font-family:"微软雅黑"; color:#333}
+.page5 .contact div{ margin:.3rem;}
+.page5 .contact h2{font-size:.36rem;  text-align:center; height:.9rem; line-height:.9rem; border:.04rem dashed #FBC200; letter-spacing:.06rem}
+.page5 .contact .WeChat{background:url("../images/page5/weixin.png") no-repeat;background-size: cover;width:2.5275rem;height: 3.36rem; margin-left:.75rem;}
+/* 第五屏元素动画*/
+#page5 .contact{-webkit-animation: fadeIn 1s ease .2s both;animation: fadeIn 1s ease .2s both;}
+#page5 .contact .text01{-webkit-animation: zoomIn 1s ease .2s both;animation: zoomIn 1s ease .2s both}
+#page5 .contact .WeChat{-webkit-animation: rollIn 1s ease 0.6s both;animation: rollIn 1s ease .6s both}
+#page5 .contact .text02{-webkit-animation: lightSpeedIn 1s ease 1s both;animation: lightSpeedIn 1s ease 1s both}
+#page5 .contact .text03{-webkit-animation: lightSpeedIn 1s ease 1.4s both;animation: lightSpeedIn 1s ease 1.4s both}
+#page5 .contact .text04{-webkit-animation: lightSpeedIn 1s ease 1.8s both;animation: lightSpeedIn 1s ease 1.8s both}
